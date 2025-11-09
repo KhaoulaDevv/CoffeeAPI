@@ -5,16 +5,18 @@ public class CoffeeModel {
 	int id;
 	String name;
 	String imageUrl;
+	String instructions;
 
 	// Constructors
 	public CoffeeModel() {
 	}
 
-	public CoffeeModel(int id, String name, String imageUrl) {
+	public CoffeeModel(int id, String name, String imageUrl, String instructions) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.imageUrl = imageUrl;
+		this.instructions= instructions; 
 	}
 
 	// Getters and Setters
@@ -40,6 +42,14 @@ public class CoffeeModel {
 
 	public void setImageUrl(String imageUrl) {
 		this.imageUrl = imageUrl;
+	}
+
+	public String getInstructions() {
+		return instructions;
+	}
+
+	public void setInstructions(String instructions) {
+		this.instructions = instructions;
 	}
 
 }
